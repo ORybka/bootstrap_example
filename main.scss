@@ -1,0 +1,36 @@
+#intro {
+	height: 80vh;
+	background-color: aquamarine;
+}
+
+.carousel-container {
+  margin: 10rem auto;
+  width: 70%;
+  height: 40vh;
+  text-align: center;
+
+  .animate-p {
+    padding: 3rem 0;
+  }
+
+  .btn-get-started {
+    border: 0.2rem solid blue;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+#services {
+  height: 80vh;
+	padding-top: 5rem;
+	padding-bottom: 4rem;
+}
+
+#features {
+  height: 80vh;
+  padding-bottom: 4rem;
+  
+  h2 {
+    text-align: center;
+  }
+}
