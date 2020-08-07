@@ -1,5 +1,5 @@
 #intro {
-  height: 80vh;
+  height: 90vh;
   background-color: aquamarine;
 }
 
@@ -21,17 +21,80 @@
 }
 
 #services {
-  height: 80vh;
+  height: 90vh;
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
 
+#services img {
+  height: 10rem;
+  width: auto;
+}
+
 #features {
-  height: 80vh;
   padding-bottom: 4rem;
 }
 
 #features h2 {
   text-align: center;
+  margin-bottom: 5rem;
+}
+
+#features .row {
+  margin-bottom: 2rem;
+}
+
+#features .img-features {
+  margin: 0 auto;
+  height: 15rem;
+  width: auto;
+}
+
+#features ul {
+  list-style: none;
+}
+
+#products {
+  padding-bottom: 4rem;
+}
+
+#products h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#products .item-thumb img {
+  height: 12rem;
+  width: auto;
+}
+
+#contact {
+  padding-bottom: 4rem;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+footer h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer .fa {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  background: none;
+  border: 0.2rem #000 solid;
+  border-radius: 50%;
+  color: blue;
+}
+
+footer .copyright {
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
