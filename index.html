@@ -16,19 +16,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png">
     <link rel="stylesheet" href="main.css" />
 
     <title>Test web-site</title>
   </head>
   <body>
     <header id="header" class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <nav class="navbar navbar-expand-lg navbar-color">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="logo">
+          <h2>MOUNTAIN</h2>
+        </a>
+        <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#"
@@ -36,10 +39,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">All our Tours</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -51,15 +54,15 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown link
+                More
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Photos & Videos</a>
+                <a class="dropdown-item" href="#">News</a>
+                <a class="dropdown-item" href="#">How to book</a>
               </div>
             </li>
           </ul>
@@ -68,137 +71,116 @@
     </header>
     <!-- INTRO -->
     <section id="intro">
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
-          <div class="carousel-item active" data-interval="5000">
+          <div class="carousel-item active" id="carousel_1">
             <div class="carousel-container">
-              <h2 class="animate-h2">Welcome to <span>LOGO 1</span></h2>
+              <h2 class="animate-h2">WELCOME <span style="text-decoration: underline;">MOUNTAIN</span></h2>
               <p class="animate-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit
                 a quas doloribus culpa vitae accusamus distinctio ducimus nobis,
                 quo exercitationem, debitis aliquid quos nam, quis omnis
                 voluptatem sequi earum. Aut velit, quam esse incidunt tenetur
                 consequatur odit corporis distinctio unde quas. Praesentium,
-                obcaecati cum! Quia, mollitia incidunt sequi ipsam neque,
-                debitis modi sapiente pariatur, voluptatibus ullam ipsa error
-                nesciunt.
+                obcaecati cum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad, nulla velit reprehenderit consectetur quod.
               </p>
-              <a href="" class="btn-get-started">Read More</a>
+              <div>
+              <a href="#features" class="btn-intro">Read More</a>
+              </div>
             </div>
           </div>
           <!-- Slide 2 -->
-          <div class="carousel-item" data-interval="5000">
+          <div class="carousel-item" id="carousel_2">
             <div class="carousel-container">
-              <h2 class="animate-h2">Welcome to <span>LOGO 2</span></h2>
+              <h2 class="animate-h2">ORGANISE YOUR MOUNTAIN BIKING TRIP</h2>
               <p class="animate-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit
-                a quas doloribus culpa vitae accusamus distinctio ducimus nobis,
-                quo exercitationem, debitis aliquid quos nam, quis omnis
-                voluptatem sequi earum. Aut velit, quam esse incidunt tenetur
-                consequatur odit corporis distinctio unde quas. Praesentium,
-                obcaecati cum! Quia, mollitia incidunt sequi ipsam neque,
-                debitis modi sapiente pariatur, voluptatibus ullam ipsa error
-                nesciunt.
+                Once you've chosen the perfect destination for your ability and style of riding, you need to organise your accommodation, airport transfers, mountain bike hire and guiding. We've got your back. We work with the best companies in the industry to help you organise an unforgettable biking trip. Choose the one of our tours and try it by yourself!
               </p>
-              <a href="" class="btn-get-started">Read More</a>
+              <div>
+              <a href="#products" class="btn-intro">Read More</a>
+              </div>
             </div>
           </div>
           <!-- Slide 3 -->
-          <div class="carousel-item" data-interval="5000">
+          <div class="carousel-item" id="carousel_3">
             <div class="carousel-container">
-              <h2 class="animate-h2d">Welcome to <span>LOGO 3</span></h2>
+              <h2 class="animate-h2">THE BEST ROAD CYCLE CLIMBS IN THE FRENCH ALPS</h2>
               <p class="animate-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit
-                a quas doloribus culpa vitae accusamus distinctio ducimus nobis,
-                quo exercitationem, debitis aliquid quos nam, quis omnis
-                voluptatem sequi earum. Aut velit, quam esse incidunt tenetur
-                consequatur odit corporis distinctio unde quas. Praesentium,
-                obcaecati cum! Quia, mollitia incidunt sequi ipsam neque,
-                debitis modi sapiente pariatur, voluptatibus ullam ipsa error
-                nesciunt.
+                The French Alps cycle climbs are the stuff that dreams are made of. Think blue skies, fresh air and snow-capped peaks. Some are Tour classics that let you test yourself against cycling’s best and some are challenging yet doable ascents through spectacular scenery. All these climbs will set your legs on fire and all are hugely rewarding when you make it to the top.
               </p>
-              <a href="" class="btn-get-started">Read More</a>
+              <div>
+              <a href="" class="btn-intro">Read More</a>
+              </div>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleInterval"
-          role="button"
-          data-slide="prev"
-        >
+        <div class="bg-color"></div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleInterval"
-          role="button"
-          data-slide="next"
-        >
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
     </section>
-    <!-- SERVICES -->
-    <section id="services">
+    <!-- INFRORMATION -->
+    <section id="info">
       <div class="container">
+        <h2 class="heading">Useful information before start</h2>
         <div class="row">
-          <div class="col-sm-3 col-lg-3 d-flex">
+          <div class="col-sm-3 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="400">
             <div class="card" style="width: 18rem;">
               <img src="assets/pic_example_1.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Fitness / technical level</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <a href="#" class="btn btn-primary">More ...</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 d-flex">
+          <div class="col-sm-3 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="700">
             <div class="card" style="width: 18rem;">
               <img src="assets/pic_example_1.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Equipment</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <a href="#" class="btn btn-primary">More ...</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 d-flex">
+          <div class="col-sm-3 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="1000">
             <div class="card" style="width: 18rem;">
               <img src="assets/pic_example_1.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Accommodation</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <a href="#" class="btn btn-primary">More ...</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 d-flex">
+          <div class="col-sm-3 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="1300">
             <div class="card" style="width: 18rem;">
               <img src="assets/pic_example_1.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Название карточки</h5>
+                <h5 class="card-title">Travel insurance</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <a href="#" class="btn btn-primary">More ...</a>
               </div>
             </div>
           </div>
@@ -208,15 +190,14 @@
     <!-- FEATURES -->
     <section id="features">
       <div class="container">
-        <h2>Who we are</h2>
+        <h2 class="heading">Who we are</h2>
         <div class="row" data-aos="fade-left" data-aos-duration="2000">
           <div class="col-sm-4">
             <img src="assets/pic_example.png" class="img-features" alt="" />
           </div>
           <div class="col-sm-8 pt-4">
             <h3>
-              Voluptatem dignissimos provident quasi corporis voluptates sit
-              assumenda.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -229,7 +210,7 @@
                   src="./assets/done-black-18dp.svg"
                   alt="done icon"
                 />
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </li>
               <li>
                 <img
@@ -245,8 +226,7 @@
         <div class="row" data-aos="fade-right" data-aos-duration="2000">
           <div class="col-sm-8 pt-4">
             <h3>
-              Voluptatem dignissimos provident quasi corporis voluptates sit
-              assumenda.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -259,7 +239,7 @@
                   src="./assets/done-black-18dp.svg"
                   alt="done icon"
                 />
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </li>
               <li>
                 <img
@@ -281,8 +261,7 @@
           </div>
           <div class="col-sm-8 pt-4">
             <h3>
-              Voluptatem dignissimos provident quasi corporis voluptates sit
-              assumenda.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -295,7 +274,7 @@
                   src="./assets/done-black-18dp.svg"
                   alt="done icon"
                 />
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </li>
               <li>
                 <img
@@ -311,7 +290,7 @@
                   src="./assets/done-black-18dp.svg"
                   alt="done icon"
                 />
-                Duis aute irure dolor in reprehenderit in voluptate velit.
+                Repellendus sit voluptatibus placeat incidunt laudantium.
               </li>
             </ul>
           </div>
@@ -321,144 +300,122 @@
     <!-- PRODUCTS -->
     <section id="products">
       <div class="container">
-        <h2>Our products</h2>
+        <h2 class="heading">Our tours</h2>
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_1.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
+              </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_2.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
+              </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_1.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="product-item">
-              <div class="item-thumb">
-                <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
-                </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="row" style="margin-bottom: 2rem;">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_2.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
+              </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_1.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
+              </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="product-item">
-              <div class="item-thumb">
+              <div class="item">
+                <img src="assets/tour_2.jpg" alt="product" >
                 <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
+                  <div class="product-text">Learn more</div>
                 </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="product-item">
-              <div class="item-thumb">
-                <div class="overlay">
-                  <div class="overlay-inner">
-                    <a href="#nogo" class="view-detail">Add to Cart</a>
-                  </div>
-                </div>
-                <img src="assets/pic_example_2.jpg" alt="" />
+              <h3>Tour</h3>
+              <div>Price: 
+                <span class="product-text-muted">
+                  $250.00
+                </span> -
+                <span class="price">
+                  $170.00
+                </span>
               </div>
-              <h3>Product Item</h3>
-              <span
-                >Price: <em class="text-muted">$250.00</em> -
-                <em class="price">$170.00</em></span
-              >
             </div>
           </div>
         </div>
@@ -467,7 +424,7 @@
     <!-- CONTACT -->
     <section id="contact">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="heading">Contact</h2>
         <div class="row">
           <div class="col-lg-6 d-flex align-items-center">
             <div class="row">
@@ -503,35 +460,39 @@
     </section>
     <!-- FOOTER -->
     <footer>
-      <div class="container">
-        <h4>Meet us in social media</h4>
-        <div class="d-flex justify-content-center">
+      <div id="footer-container">
+        <div id="btn-up">
+          <a href="#intro">
+            <span class="material-icons btn-up-style">
+            expand_less
+            </span>
+          </a>
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer"><h3>Homepage</h3></a>
+        <div id="footer-icons">
           <a
-          href="#"
-          class="fa fa-twitter"
-        ></a>
-        <a
-          href="#"
-          class="fa fa-instagram"
-        ></a>
-        <a
-          href="#"
-          class="fa fa-facebook"
-        ></a>
-        <a
-          href="#"
-          class="fa fa-linkedin"
-        ></a>
-      </div>
-      <div class="copyright d-flex justify-content-center">
-        <span class="copyright-text">Olha Mykolaichuk</span>
-        <img
-                  class="icon-copyright"
-                  src="./assets/copyright-24px.svg"
-                  alt="copyright icon"
-                />
-        <span class="copyright-text">2020</span>
-      </div>
+            href="https://www.linkedin.com/in/olha-mykolaichuk/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+          <a
+            href="https://github.com/OlgaMyk"
+            class="fa fa-github"
+            target="_blank"
+          ></a>
+          <a href="mailto:olha.mykolaichuk@gmail.com">
+            <i class="material-icons download mail" target="_blank">mail</i></a
+          >
+          <a
+            href="https://codepen.io/Olga_Mykola"
+            class="fa fa-codepen"
+            target="_blank"
+          ></a>
+        </div>
+        <div id="copyright">
+          <a href="#" target="_blank" rel="noopener noreferrer"><span class="copyright-text">Olha Mykolaichuk</span></a>
+          <i class="material-icons download copyright-text">copyright</i>
+          <span class="copyright-text">2020</span>
         </div>
       </div>
     </footer>
@@ -557,5 +518,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="main.js"></script>
   </body>
 </html>

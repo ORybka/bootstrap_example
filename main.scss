@@ -1,28 +1,152 @@
+// https://www.france-bike-trips.com/mountain-bike-mtb-tour/france.html
+
+// https://deinde.com.ua/
+
+$colors: (
+  main: #47b668,
+  text: #004d27,
+  text2: #fff,
+  text3: #000,
+);
+
+@function color($colors-name) {
+  @return map-get($colors, $colors-name);
+}
+
+html {
+  font-family: 'Baloo Tamma 2', cursive, sans-serif;
+  overflow-x: hidden;
+}
+
+.heading {
+  display: block;
+  margin: 0 auto 2rem;
+  padding-top: 3rem;
+  text-align: center;
+  width: 30%;
+
+  &::after {
+    content: "";
+    display: block;
+    background: color(text);
+    z-index: 1;
+    height: 0.2rem;
+    width: 35%;
+    margin: 1rem auto 0;
+    position: relative;
+  }
+}
+
+/***********NAVBAR*******/
+.navbar-color {
+  background-color: transparent;
+}
+
+.menu {
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.navbar-brand { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+  height: 4rem;
+  width: 4rem;
+  }
+  h2 {
+    color: color(text);
+    margin-left: 1rem;
+  }
+}
+
+.nav-link {
+  color: color(text);
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: color(text);
+}
+
+.show { 
+  margin-right: 25rem;
+}
+
+/************INTRO***********/
 #intro {
 	height: 90vh;
-	background-color: aquamarine;
 }
 
 .carousel-container {
-  margin: 10rem auto;
+  margin: 7rem auto 10rem;
   width: 70%;
-  height: 40vh;
+  height: 50vh;
   text-align: center;
 
+  .animate-h2 {
+    position: relative;
+    color: color(text3);
+    opacity: 1;
+  }
+
   .animate-p {
+    color: color(text3);
     padding: 3rem 0;
   }
 
-  .btn-get-started {
-    border: 0.2rem solid blue;
+  .btn-intro {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0.2rem solid color(text3);
     border-radius: 12px;
-    padding: 1rem 1.5rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: color(main);
   }
 }
 
-#services {
-  height: 90vh;
-	padding-top: 5rem;
+#carousel_1 {
+  background-image: url(assets/carousel_2.jpg);
+  clip-path: ellipse(71% 62% at 62% 30%);
+  background-size: cover;
+  // filter: sepia(100%) hue-rotate(190deg) saturate(500%) grayscale(50%);
+}
+
+#carousel_2 {
+  background-image: url(assets/carousel_2.jpg);
+  clip-path: ellipse(71% 62% at 62% 30%);
+  background-size: cover;
+  // filter: sepia(100%) hue-rotate(190deg) saturate(500%) grayscale(50%);
+}
+
+#carousel_3 {
+  background-image: url(assets/carousel_2.jpg);
+  clip-path: ellipse(71% 62% at 62% 30%);
+  background-size: cover;
+  // filter: sepia(100%) hue-rotate(190deg) saturate(500%) grayscale(50%);
+}
+
+.bg-color {
+  position: relative;
+  display: block;
+  background-color: color(main);
+  opacity: 0.5;
+  margin-top: -17rem;
+  height: 16rem;
+  width: 100%;
+  clip-path: ellipse(68% 67% at 53% 32%);
+  z-index: -100;
+}
+
+/************INFRORMATION***********/
+
+#info {
+  height: 100vh;
+	padding-top: 1rem;
   padding-bottom: 4rem;
   
   img {
@@ -32,12 +156,7 @@
 }
 
 #features {
-  padding-bottom: 4rem;
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 5rem;
-  }
+  padding-bottom: 1rem;
 
   .row {
     margin-bottom: 2rem;
@@ -54,49 +173,184 @@
   }
 }
 
+/*********TOURS********/
+
 #products {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  background-color: color(main);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 99%, 0 90%);
+
+  .product-item {
+    margin-bottom: 2rem;
+
+    .item {
+      height: 12rem;
+      width: 18rem;
+      overflow: hidden;
+      
+      img {
+        display: block;
+        height: 100%;
+        width: auto;
+        z-index: -1;
+      }
+      
+      .overlay {
+        position: relative;
+        top: -12rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000;
+      }
   
-  h2 {
-    text-align: center;
-    margin-bottom: 3rem;
+      
+      &:hover .overlay {
+        opacity: 0.8;
+      }
+      
+      .product-text {
+        color: white;
+        opacity: 1;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        &::after {
+          content: "";
+          display: block;
+          background: color(main);
+          z-index: 1;
+          height: 0.1rem;
+          width: 0%;
+          left: 50%;
+          position: absolute;
+          transition: width .3s ease-in-out;
+          transform: translateX(-50%);
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
   }
 
-  .item-thumb img {
-    height: 12rem;
-    width: auto;
+  .product-text-muted {
+    color: gray; 
+    text-decoration: line-through;
+  }
+
+  .price {
+    color: green;
+    font-weight: bold;
   }
 }
 
 #contact {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   
   h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+
+    &::after {
+      width: 20%;
+    }
   }
 }
 
+/*********FOOTER*********/
 footer {
-  
-  h4 {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30vh;
+  width: 100%;
+  margin-top: 2rem;
+  flex-shrink: 0;
 
-  .fa {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    background: none;
-    border: 0.2rem #000 solid;
-    border-radius: 50%;
-    color: blue;
-  }
+  #footer-container {
+    padding-top: 1rem;
 
-  .copyright {
-    padding: 2rem;
+    #btn-up {
+      height: 3rem;
+      width: 3rem;
+      background-color: color(text);
+      border: 1px solid #000;
+      margin: -2.5rem auto 0;
+
+      .btn-up-style {
+        font-size: 3rem;
+        color: color(main);
+        text-decoration: none;
+      }
+    }
+
+    h3 {
+      display: block;
+      color: color(main);
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      width: 30rem;
+      text-align: center;
+      margin: 0.5rem auto 0;
+    }
+
+    #footer-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 25%;
+      margin: 0 auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      .fa,
+      .mail {
+        padding: 0.5rem;
+        font-size: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        text-align: center;
+        background: none;
+        border: 0.2rem color(text) solid;
+        border-radius: 50%;
+        color: color(text);
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: color(main);
+          transition: all 0.5s;
+          border: 0.2rem color(main) solid;
+          box-shadow: 0px 6px 15px color(text);
+          text-decoration: none;
+        }
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      #footer-icons {
+        width: 15rem;
+      }
+    }
+
+    #copyright {
+      display: block;
+      width: 30%;
+      margin: 0 auto;
+      text-align: center;
+
+      .copyright-text {
+        color: color(main);
+        font-size: 1.2rem;
+      }
+    }
   }
 }
