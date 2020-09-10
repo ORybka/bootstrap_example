@@ -4,6 +4,7 @@ $(document).ready(function() {
       $('.navbar').css('background','transparent');
     } else {
       $('.navbar').css('background','#6fc98a');
+      $('.dropdown-menu').css('background','rgba(255, 255, 255, 1)');
     }
   });
 });
