@@ -3,10 +3,24 @@ html {
   overflow-x: hidden;
 }
 
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  min-height: 100%;
+  width: auto;
+}
+
 .heading {
   display: block;
   margin: 0 auto 2rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
   text-align: center;
   width: 30%;
 }
@@ -59,6 +73,10 @@ html {
 
 .nav-link {
   color: #004d27;
+}
+
+.nav-link:hover {
+  color: #000;
 }
 
 .dropdown-menu {
@@ -143,7 +161,7 @@ html {
 #info {
   height: 110vh;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 #info .style-card {
@@ -218,7 +236,7 @@ html {
 
 /*********TOURS********/
 #tours {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   background-color: #47b668;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 99%, 0 90%);
           clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 99%, 0 90%);
@@ -250,8 +268,8 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
   background-color: #000;
 }
 
@@ -301,14 +319,16 @@ html {
   font-weight: bold;
 }
 
+/*********CONTACT********/
 #contact {
   padding-bottom: 2rem;
+  margin: -3.5rem auto 0;
 }
 
 #contact h2 {
   text-align: center;
   margin-bottom: 2rem;
-  padding-top: 1rem;
+  padding-top: 6rem;
 }
 
 #contact h2::after {
@@ -318,7 +338,7 @@ html {
 /*********FOOTER*********/
 footer {
   background-color: rgba(0, 0, 0, 0.5);
-  height: 35vh;
+  height: 30vh;
   width: 100%;
   margin-top: 2rem;
   -ms-flex-negative: 0;
@@ -343,7 +363,11 @@ footer #footer-container #btn-up .btn-up-style {
   text-decoration: none;
 }
 
-footer #footer-container h3 {
+footer #footer-container .footer-a {
+  text-decoration: none;
+}
+
+footer #footer-container .footer-a h3 {
   display: block;
   color: #47b668;
   font-size: 2rem;
@@ -351,6 +375,10 @@ footer #footer-container h3 {
   width: 30rem;
   text-align: center;
   margin: 0.5rem auto 0;
+}
+
+footer #footer-container .footer-a h3:hover {
+  color: #004d27;
 }
 
 footer #footer-container #footer-icons {
@@ -370,10 +398,10 @@ footer #footer-container #footer-icons {
 
 footer #footer-container #footer-icons .fa,
 footer #footer-container #footer-icons .mail {
-  padding: 0.5rem;
-  font-size: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
   background: none;
   border: 0.2rem #004d27 solid;
@@ -405,6 +433,10 @@ footer #footer-container #copyright {
   width: 30%;
   margin: 0 auto;
   text-align: center;
+}
+
+footer #footer-container #copyright .footer-hover:hover {
+  color: #004d27;
 }
 
 footer #footer-container #copyright .copyright-text {
