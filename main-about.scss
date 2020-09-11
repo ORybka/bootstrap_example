@@ -1,0 +1,41 @@
+@import "main";
+
+/*********MAIN SECTION*********/
+#main-about {
+  height: 100%;
+  padding-top: 2rem;
+
+  .team {
+
+    .media {
+      display: none;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      background-color: color(main);
+      height: 3rem;
+      opacity: 0.7;
+
+      a {
+        color: color(text3);
+        font-size: 1.5rem;
+      }
+    }
+    
+    &:hover .media {
+      display: flex;
+      margin-top: -3rem;
+    }
+  }
+
+  img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h5 {
+    color: color(text);
+  }
+}
+
