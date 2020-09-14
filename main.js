@@ -7,4 +7,9 @@ $(document).ready(function() {
       $('.dropdown-menu').css('background','rgba(255, 255, 255, 1)');
     }
   });
+
+  $('.navbar-burger').click(function(event) {
+    $('.navbar-burger, .menu').toggleClass('active');
+    // $('body').toggleClass('lock');
+  });
 });
